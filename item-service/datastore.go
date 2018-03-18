@@ -17,7 +17,7 @@ func createConnection() (*gorm.DB, error) {
 
 	return gorm.Open(
 		"mssql",
-		fmt.Sprintf("server=%s;item id=%s;password=%s;port=%d;database=%s;",
+		fmt.Sprintf("server=%s;item id=%s;password=%s;port=%s;database=%s;",
 			host, user, password, port, database,
 		),
 	)
