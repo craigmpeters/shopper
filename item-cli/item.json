@@ -1,4 +1,5 @@
 {
   "name" : "Test Item",
-  "price" : 9.99
+  "price" : 9.99,
+  "description" : "Test Description"
 }
