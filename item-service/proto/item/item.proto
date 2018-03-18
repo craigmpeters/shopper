@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package go.micro.srv.item;
+
+service itemService {
+    rpc Create(Item) returns (Response) {}
+    rpc Get(Item) returns (Response) {}
+    rpc GetAll(Request) returns (Response) {}
+}
+
+message Request {}
+
+message Response{
+    Item item = 1;
+    repeated Item items = 2;
+}
+
+message Item {
+    int32 id = 1;
+    string name = 2;
+    double price = 3;
+}
+
+message Error {
+    int32 code = 1;
+    string description = 2;
+}
