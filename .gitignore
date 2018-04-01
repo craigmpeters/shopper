@@ -16,3 +16,4 @@
 /docker-compose.yml
 /item-service/item-service
 .idea
+/user-service/vendor/

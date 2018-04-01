@@ -1,0 +1,23 @@
+package: github.com/craigmpeters/shopper/user-service
+import:
+- package: github.com/dgrijalva/jwt-go
+  version: ^3.2.0
+- package: github.com/golang/protobuf
+  version: ^1.0.0
+  subpackages:
+  - proto
+- package: github.com/jinzhu/gorm
+  version: ^1.9.1
+  subpackages:
+  - dialects/mssql
+- package: github.com/micro/go-micro
+  version: ^0.5.0
+  subpackages:
+  - client
+  - server
+- package: github.com/micro/mdns
+- package: github.com/satori/go.uuid
+  version: ^1.2.0
+- package: golang.org/x/net
+  subpackages:
+  - context
